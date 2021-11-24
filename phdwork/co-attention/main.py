@@ -1,16 +1,6 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+import h5py
+f = h5py.File('/Users/liyuanchao/Documents/Corpus/CMU-MOSEI/audio/audio_test.h5', 'r')
+i = 0
+for key in f.keys():
+    print(f[key][0])
+    # print(f[key])
